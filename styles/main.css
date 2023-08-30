@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    display: none;
+}
+
+header .navigation.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1, 1, 1, 0.5);
+}
+
+header .navigation .navigate-items a{
+    color:#222;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+header .navigation .navigate-items a:before{
+    background: #222;
+    height: 5px;
+
+}
+
+header .navigation.active .navigate-items{
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+
+}
+
+header .navigation .navigate-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigate-items a:hover:before{
+    width: 100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #0194B6;
+}
+
+.home::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgb(#04304B);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+    display: none;
+}
+
+.home .content.active{
+    display: block;
+}
+
+.home .content h1 {
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.home .content span{
+    font-size: 8rem;
+    font-weight: 600;
+   
+}
+
+
+.home .content p{
+    margin-bottom: 65px;
+    font-size: xx-large;
+}
+
+.home .content a {
+    background: #fff;
+    padding: 15px 35px;
+    color: #0194B6;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.home .content a:hover {
+    background: #0194B6; 
+    color: #fff; 
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    font-size: xx-large;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6 rem;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active{
+    background: #0194B6;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover{
+transform: scale(1.2);
+}
+
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0.5% at 0 50%);
+}
+
+.video-slide.active{
+    clip-path: circle(150% at 0 49%);
+    transition: 2s ease;
+    transition-property: clip-path;
+
+    
+   
+}
+
+@media (max-width: 1920px){
+    header{
+        padding: 12px 20px;
+    }
+
+    section{
+        padding: 100px 20px;
+    }
+
+    .home .media-icons {
+        right: 15px;
+    }
+
+
+    
+}
+
+
+button {
+    border: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+nav.navbar {
+    background-color: white;
+    border-bottom: black;
+}
+
+a.navbar-brand img {
+    height: 500px;
+}
+
+nav{
+    height: 100px;
+    margin-left: -300px; 
+}
+
+
+#weather-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.weather-card {
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.weather-info {
+    font-size: 18px;
+    color: #555;
+    margin: 8px 0;
+}
+
+#location-name {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+#temperature {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#description {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .weather-card {
+        padding: 15px;
+    }
+
+    .weather-header {
+        font-size: 20px;
+    }
+
+    .weather-info {
+        font-size: 16px;
+    }
+
+    #temperature {
+        font-size: 28px;
+    }
+
+    #description {
+        font-size: 16px;
+    }
+}
+
+
+
+#additional-info-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.additional-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.additional-info-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.additional-info-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.additional-info-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.additional-info-link:hover {
+    color: #0056b3;
+}
+
+

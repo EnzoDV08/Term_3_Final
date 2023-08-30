@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+
+    <script src="/java/booking.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/booking.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" alt="Logo">
+            </a>
+  
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/trip.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Bookings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5" id="destination-cards">
+        <!-- Your card elements here -->
+        <div class="col-md-6 mb-4">
+            <div class="card" data-category="multi-destination">
+                <div class="card-overlay">
+                    <h2 class="overlay-text">Maldives</h2>
+                </div>
+                <img src="/img/Maldives.webp" class="card-img" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Maldives</h1>
+                    <p class="card-sub-title">Multi-Destination Trip</p>
+                    <p class="card-info" data-duration="10 days" data-price="R50 000">Experience the mesmerizing Maldives archipelago with an unforgettable 10-day multi-island adventure. Immerse yourself in the beauty of the turquoise waters, pristine beaches, and vibrant coral reefs that Maldives has to offer.</p>
+                    <p class="card-info">Trip Duration: 10 days</p>
+                    <p class="card-info">Price: R50 000</p>
+                    <button class="card-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above card structure for other destinations -->
+    </div>
+    
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <div id="checkout-trips"></div>
+        <p>Total Quantity: <span id="total-quantity">0</span></p>
+        <p>Total Amount: <span id="total-amount">R0.00</span></p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+</body>
+</html>

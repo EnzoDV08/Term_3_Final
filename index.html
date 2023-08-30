@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key= 1dc50b8b17ea6338fc64d3e9222fb73a"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/java/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ysabeau+Infant:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md  ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo.png" alt="Logo">
+                </a>
+      
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/trip.html">Locations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bookings</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="/videos/island 2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/videos/Cruise.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="/videos/workers.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>Wonderful.<br><span>Islands</span></h1>
+            <p>Embark on the ultimate island-hopping adventure aboard our luxurious cruise ship! Sail the seas, explore breathtaking islands, and create unforgettable memories on a journey like no other.</p>
+            <a href="trip.html">BOOK NOW</a>
+        </div>
+        <div class="content">
+            <h1>Cruise<br><span>WITH US</span></h1>
+            <p>Discover a world of luxury and excitement aboard our extraordinary cruise ship. Indulge in gourmet dining, unwind in lavish accommodations, and immerse yourself in thrilling entertainment as you sail to exotic destinations. Your dream vacation begins here, where every moment is a masterpiece of relaxation and adventure.</p>
+            <a href="#">read more</a>
+        </div>
+        <div class="content">
+            <h1>Your<br><span>Safety come firts</span></h1>
+            <p>Experience the pinnacle of personalized service aboard our cruise ship, where you are our first and foremost priority. From attentive staff catering to your every need, to a range of thoughtfully designed amenities focused on your comfort, we're dedicated to crafting a voyage where you're not just a guest – you're family</p>
+            <a href="#">read more</a>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <section id="weather-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Weather Forecast
+                        </div>
+                        <div class="card-body">
+                            <p id="location-name"></p>
+                            <p id="temperature"></p>
+                            <p id="description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+     
+    
+        <section id="additional-info-section">
+            <div class="additional-info-container">
+                <h2 class="additional-info-header">Additional Information</h2>
+                <p class="additional-info-text">
+                    Welcome aboard our cruise ship! We're committed to providing you with an exceptional journey filled with luxury, entertainment, and relaxation. Here's what you can expect on your cruise:
+                </p>
+                <ul class="additional-info-list">
+                    <li>Spacious and well-appointed cabins with stunning sea views</li>
+                    <li>World-class dining with a variety of culinary delights</li>
+                    <li>Exciting onboard entertainment, from live shows to movie nights</li>
+                    <li>Luxurious spa and wellness facilities for ultimate relaxation</li>
+                    <li>Guided shore excursions to explore exotic destinations</li>
+                    <li>24/7 concierge service to cater to your every need</li>
+                </ul>
+                <p class="additional-info-text">
+                    Your journey with us is not just a cruise – it's an unforgettable experience tailored to your comfort and enjoyment. We can't wait to welcome you on board!
+                </p>
+                <p class="additional-info-text">
+                    For more details, visit our <a href="#" class="additional-info-link">website</a> or contact our customer service.
+                </p>
+            </div>
+        </section>
+    
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        
+
+        // Javascript code for video slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+
+        function sliderNav(manual) {
+            btns.forEach(btn => btn.classList.remove("active"));
+            slides.forEach(slide => slide.classList.remove("active"));
+            contents.forEach(content => content.classList.remove("active"));
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+    </script>
+
+    
+</body>
+</html>

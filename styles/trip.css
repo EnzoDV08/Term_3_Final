@@ -1,0 +1,293 @@
+.col-4{
+    width: 31.33%;
+    height: 300px;
+    margin: 1%;
+    border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+.full-height {
+    height: 800px;
+}
+
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+nav.navbar {
+    background-color: white;
+    border-bottom: black;
+}
+
+a.navbar-brand img {
+    height: 500px;
+}
+
+nav{
+    height: 100px;
+    margin-left: -300px; 
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(/img/top\ view.jpeg);
+    font-family: 'Libre Baskerville', serif;
+    background-position: center;
+    background-size: cover;
+}
+
+.card{
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+    margin: 1%;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;    
+}
+
+.card-body{
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #0f475a;
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.card:hover .card-body{
+    right: 0;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.card-btn{
+    color: black;
+    background: #fff;
+    padding: 10px 20px;
+    width: 120px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 500;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    color: white;
+    background: #007bff;
+    padding: 10px 20px;
+    width: 120px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 500;
+    cursor: pointer;
+}
+
+.card-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 71, 90, 0.8); 
+    backdrop-filter: blur(10px); 
+    z-index: -1;
+    border-radius: inherit;
+}
+
+
+
+#additional-info-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.additional-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.additional-info-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.additional-info-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.additional-info-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.additional-info-link:hover {
+    color: #0056b3;
+}
+
+
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.0); 
+}
+
+.overlay-text {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding: 10px 20px;
+    background: white; 
+    border-radius: 10px;
+}
+.dropbtn {
+    background-color: #1da9ad;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #35d1d6;
+}
+
+
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown content when button is clicked */
+.show {
+    display: block;
+}
+
+
+#destination-cards{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+
+
+.btn-group{
+    background-color: black;
+    color: white;
+}
